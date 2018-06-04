@@ -20,11 +20,9 @@ services:
     ports:
       - 8080:80
   database: # set up mysql container
-    image: mysql:5.6
+    image: mysql:5.7
     environment:
       - "MYSQL_ROOT_PASSWORD=secret"
-      - "MYSQL_PASSWORD=secret"
-      - "MYSQL_USER=root"
       - "MYSQL_DATABASE=academy"
     ports:
       - "33061:3306"
